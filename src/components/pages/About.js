@@ -4,14 +4,11 @@ import React from 'react';
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About Me</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      Hi, my name is Trenton Kirchner and I'm a 26-year-old emerging full stack developer from northern Indiana, currently living in Nashville. I am new to the field and am excited to continue growing my skills. Before pursuing a career in tech, I worked in sales and customer service, which taught me the importance of attention to detail and problem-solving. I'm committed to the quality of my work and take pride in writing clean, efficient, and maintainable code.
+I graduated from Vanderbilts Full Stack bootcamp with a certificate for coding and have been honing my skills ever since. I believe in treating everyone fairly while maintaining a level of reachable expectations. I'm eager to help and always open to new opportunities to learn and grow.
+When I'm not coding, I enjoy Paddle boarding, working on my bus, and hiking. Thank you for taking the time to read my bio, and I look forward to connecting with you!
       </p>
     </div>
   );
