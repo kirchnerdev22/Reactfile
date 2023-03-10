@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Resume() {
   const projects = [
@@ -36,6 +38,7 @@ export default function Resume() {
 
   return (
     <div>
+      <Header />
       <h1>Resume Page</h1>
       <p>
         These are some past Jobs and Projects.
@@ -52,6 +55,7 @@ export default function Resume() {
           </li>
         ))}
       </ul>
+      <Footer />
     </div>
   );
 }
