@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
-
-
 function Header({ currentPage, handlePageChange }) {
   const [activeButton, setActiveButton] = useState('');
   return (
     <header className="header-container">
-      <h1>Trenton</h1>
+      <h1 className='name'>Trenton</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
@@ -27,7 +25,7 @@ function Header({ currentPage, handlePageChange }) {
               handlePageChange('About');
               setActiveButton('about');
             }}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : `nav-link ${activeButton === 'about' ? 'active-white' : ''}`}
+            className={currentPage === 'About' ? 'nav-link active' : `nav-link ${activeButton === 'about' ? 'active-white' : ''}`}
           >
             About
           </a>
@@ -39,7 +37,7 @@ function Header({ currentPage, handlePageChange }) {
               handlePageChange('Resume');
               setActiveButton('resume');
             }}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : `nav-link ${activeButton === 'resume' ? 'active-white' : ''}`}
+            className={currentPage === 'Resume' ? 'nav-link active' : `nav-link ${activeButton === 'resume' ? 'active-white' : ''}`}
           >
             Resume
           </a>

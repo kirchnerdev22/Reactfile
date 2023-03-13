@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './../assets/Contact.css';
-import Header from '../Header';
-import Footer from '../Footer';
+
 
 export default function Contact() {
   const [name, setName] = useState('');

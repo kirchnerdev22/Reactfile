@@ -9,16 +9,15 @@ function Footer() {
     <footer className="footer">
       <div className="social-links">
         <a href="https://github.com/kirchnerdev22" target="_blank" rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub logo" />
+          <img src={githubLogo} alt="GitHub logo"  />
         </a>
         <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
-          <img src={linkedinLogo} alt="LinkedIn logo" />
+          <img src={linkedinLogo} alt="LinkedIn logo"  />
         </a>
         <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
           <img src={twitterLogo} alt="Twitter logo" />
         </a>
       </div>
-      <p>© My Portfolio</p>
     </footer>
   );
 }

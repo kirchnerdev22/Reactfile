@@ -1,0 +1,150 @@
+* {
+  font-family: Bungee;
+  background-color:#c0d6df;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border:#dd6e42 3px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #4f6d7a;
+}
+
+input:focus,
+textarea:focus {
+  outline:#dd6e42;
+  border-color: #dd6e42;
+  box-shadow: 0 0 4px #dd6e42;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #dd6e42;
+  color: #e8dab2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #eaeaea;
+  color: #4f6d7a;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a79c9c;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+}
+
+.header-container a:hover {
+  background-color: #9c9c9c;
+}
+
+.footer {
+  background-color: #312b2b;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #4f6d7a;
+  opacity: 50%;
+  width: 100%;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #eaeaea;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #dd6e42;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  margin-right: 60px;
+  width: 15%;
+}
+
+.bio{
+  width: 80%;
+}
+
+.social-links img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.projectimg {
+  max-height: 150px;
+}
+
+.project {
+  box-shadow: 0 0 4px #dd6e42;
+  width: calc(100% / 3 - 16px); /* adjust as needed based on the number of projects you have */
+  margin: 8px;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.name{
+  margin-bottom: 0px;
+}
+
