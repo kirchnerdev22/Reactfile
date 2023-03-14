@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <>
       <div className="contact-container">
-        <h1>Contact Me</h1>
+        <h1>Send me a message</h1>
         <p>If you have any questions or would like to get in touch, please fill out the form below or email me directly at kirchnerdev22@gmail.com.
 </p>
         <form className="contact-form" onSubmit={handleSubmit}>

@@ -12,44 +12,45 @@ export default function Resume() {
       name: 'Jate',
       image: Jate,
       link: 'https://lit-bayou-66279.herokuapp.com/',
-      description: 'Just another text editor that can save your notes and can be downloaded as a pwa.',
+      description: <a href='https://github.com/username/jate'>Github</a>,
     },
     {
       name: 'Day to Day Work Planner',
       image: Workday,
       link: 'https://kirchnerdev22.github.io/Day-to-day-work-planner/',
-      description: 'A work day planner built using HTML, CSS, and Javascript.',
+      description: <a href='https://github.com/username/work-day-planner'>Github</a>,
     },
     {
       name: 'Note Storage',
       image: Notetaker,
       link: 'https://immense-waters-34827.herokuapp.com/',
-      description: 'Beginner note taking app. First project deployed to Heroku.',
+      description: <a href='https://github.com/username/note-storage'>Github</a>,
     },
     {
       name: 'Javascript Time Attack',
       image: Game,
       link: 'https://github.com/kirchnerdev22/Time-Attack',
-      description: 'A quick mini-game to quiz you through the basics of Javascript',
+      description: <a href='https://github.com/username/javascript-time-attack'>Github</a>,
     },
     {
       name: 'Password Generator',
       image: Password,
       link: 'https://kirchnerdev22.github.io/PasswordGEN/',
-      description: 'Simple and quick password generator with input to change password criteria.',
+      description: <a href='https://github.com/username/password-generator'>Github</a>,
     },
     {
       name: 'Horiseon',
       image: Horiseon,
       link: 'https://kirchnerdev22.github.io/horiseo-seo-challenge/#social-media-marketing',
-      description: 'A simple website done in the early days of my bootcamp using only CSS and HTML.',
+      description: <a href='https://github.com/username/horiseon'>Github</a>,
     },
+    
   ];
 
   return (
-    <div>
-      <p>
-        These are some past Jobs and Projects.
+    <div className='projectwhole'>
+      <p className='projectbio'>
+        These are a few of the projects I have worked on. Keep an eye out as these will change or be replaced.
       </p>
       <ul>
         {projects.map((project) => (
@@ -58,7 +59,7 @@ export default function Resume() {
             <a href={project.link}>
               <img src={project.image} alt={project.name} className="projectimg" />
             </a>
-            <p>{project.description}</p>
+            <p className='githublink'>{project.description}</p>
           </li>
         ))}
       </ul>

@@ -4,7 +4,7 @@ function Header({ currentPage, handlePageChange }) {
   const [activeButton, setActiveButton] = useState('');
   return (
     <header className="header-container">
-      <h1>Trenton</h1>
+      <h1>TrentonKirchner</h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
