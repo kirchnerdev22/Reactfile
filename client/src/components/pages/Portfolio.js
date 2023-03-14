@@ -48,11 +48,9 @@ export default function Resume() {
 
   return (
     <div>
-      <h1>Resume Page</h1>
       <p>
         These are some past Jobs and Projects.
       </p>
-      <h2>Projects</h2>
       <ul>
         {projects.map((project) => (
           <li key={project.name} className="project">

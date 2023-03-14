@@ -11,7 +11,7 @@ function Footer() {
         <a href="https://github.com/kirchnerdev22" target="_blank" rel="noopener noreferrer">
           <img src={githubLogo} alt="GitHub logo"  />
         </a>
-        <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/trenton-kirchner-91b38b174/" target="_blank" rel="noopener noreferrer">
           <img src={linkedinLogo} alt="LinkedIn logo"  />
         </a>
         <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">

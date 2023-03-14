@@ -38,7 +38,6 @@ export default function Contact() {
     }
     setErrors(errors);
     if (Object.keys(errors).length === 0) {
-      // Do something with the form data
       console.log({ name, email, message });
     }
   };
@@ -47,7 +46,8 @@ export default function Contact() {
     <>
       <div className="contact-container">
         <h1>Contact Me</h1>
-        <p>If you have any questions or would like to get in touch, please fill out the form below or email me directly at [Your Email Address].</p>
+        <p>If you have any questions or would like to get in touch, please fill out the form below or email me directly at kirchnerdev22@gmail.com.
+</p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
