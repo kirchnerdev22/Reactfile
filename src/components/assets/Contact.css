@@ -126,6 +126,7 @@ textarea {
 
 .social-links img {
   height: 50px;
+  filter: invert(1)
 }
 
 .social-links a {
