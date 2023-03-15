@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Jate from '../assets/Jate.png';
 import Workday from '../assets/Workday.png';
 import Notetaker from '../assets/Notetaker.png';
@@ -12,37 +13,37 @@ export default function Resume() {
       name: 'Jate',
       image: Jate,
       link: 'https://lit-bayou-66279.herokuapp.com/',
-      description: <a href='https://github.com/username/jate'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/JATE' className='link'>The repo can be found here</a>,
     },
     {
       name: 'Day to Day Work Planner',
       image: Workday,
       link: 'https://kirchnerdev22.github.io/Day-to-day-work-planner/',
-      description: <a href='https://github.com/username/work-day-planner'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/Day-to-day-work-planner' className='link'>The repo can be found here</a>,
     },
     {
       name: 'Note Storage',
       image: Notetaker,
       link: 'https://immense-waters-34827.herokuapp.com/',
-      description: <a href='https://github.com/username/note-storage'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/note-storage' className='link'>The repo can be found here</a>,
     },
     {
       name: 'Javascript Time Attack',
       image: Game,
       link: 'https://github.com/kirchnerdev22/Time-Attack',
-      description: <a href='https://github.com/username/javascript-time-attack'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/Time-Attack' className='link'>The repo can be found here</a>,
     },
     {
       name: 'Password Generator',
       image: Password,
       link: 'https://kirchnerdev22.github.io/PasswordGEN/',
-      description: <a href='https://github.com/username/password-generator'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/PasswordGEN' className='link'>The repo can be found here</a>,
     },
     {
       name: 'Horiseon',
       image: Horiseon,
       link: 'https://kirchnerdev22.github.io/horiseo-seo-challenge/#social-media-marketing',
-      description: <a href='https://github.com/username/horiseon'>Github</a>,
+      description: <a href='https://github.com/kirchnerdev22/horiseo-seo-challenge' className='link'>The repo can be found here</a>,
     },
     
   ];
@@ -59,10 +60,10 @@ export default function Resume() {
             <a href={project.link}>
               <img src={project.image} alt={project.name} className="projectimg" />
             </a>
-            <p className='githublink'>{project.description}</p>
+            <p>{project.description}</p>
           </li>
         ))}
       </ul>
     </div>
-  );  
+  );
 }

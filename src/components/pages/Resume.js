@@ -4,9 +4,7 @@ import resume from '../assets/Profile.pdf';
 function Resume() {
   return (
     <section className='resumewhole'>
-      <p className='download'>Download my resume <a href={resume} download>here</a>
-
-.</p>
+      <p className='download'><a href={resume} className='download' download>Download my resume </a></p>
 <div className="proficiencies">
       <div>
         <h3>Frontend Proficiencies</h3>

@@ -29,8 +29,7 @@
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color:#148f77;
-  opacity: 70%;
+
 }
 
 .form-group {
@@ -55,6 +54,7 @@ textarea {
   color: #333;
   font-size: 16px;
   font-weight: bold;
+  opacity: 60%;
 }
 
 input:focus,
@@ -63,6 +63,10 @@ textarea:focus {
   background-color: #fff;
   border-color: #000000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.error{
+  color: rgb(255, 255, 255);
 }
 
 textarea {
@@ -85,32 +89,6 @@ textarea {
   background-color: #148f77;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-form {
-    max-width: 90%;
-    padding: 16px;
-  }
-
-  input,
-  textarea {
-    font-size: 14px;
-  }
-
-  .btn {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  input,
-  textarea {
-    font-size: 12px;
-  }
-
-  .btn {
-    font-size: 12px;
-  }
-}
 
 .header-container {
   display: flex;
@@ -122,14 +100,20 @@ textarea {
 
 .header-container h1 {
   display: flex;
-  color: #1abc9c;
+  color: #296d5f;
   font-size: 20px;
 }
 
-.header-container a {
+.header-container a{
   text-decoration: none;
   padding: 8px;
   color: #1abc9c;
+}
+
+.header-container a:hover{
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
 }
 
 .social-links {
@@ -206,21 +190,16 @@ textarea {
   list-style-type: none;
   display: inline-block;
   vertical-align: top;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: hidden;
   transition: all 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project img {
   max-height: 150px;
   width: 100%;
   object-fit: cover;
+  
 }
 
 .project h3 {
@@ -235,7 +214,6 @@ textarea {
   margin-top: 1%;
   text-align: center;
 }
-
 
 .proficiencies {
   display: flex;
@@ -258,11 +236,9 @@ textarea {
   margin: 10px 0;
 }
 
-
 .proficiencies > div > h3 {
   margin-right: 20px;
 }
-
 
 .proficiencies > div > ul {
   display: flex;
@@ -279,8 +255,44 @@ textarea {
   text-align: center;
 }
 
-
 .download{
-  color: #ffffff;
   text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.download:hover{
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.link{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.link:hover{
+  text-decoration: none;
+  padding: 8px;
+  color: #ffffff;
+
+}
+
+.head{
+  height: 80px;
+  width: 80px;
+  border-radius: 90px;
+  border: #ffffff 3px solid;
+}
+
+.quote{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: #1abc9c;
+  margin-left: auto;
 }

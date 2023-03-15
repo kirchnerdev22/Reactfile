@@ -64,7 +64,7 @@ export default function Contact() {
             <textarea id="message" name="message" value={message} onChange={handleInputChange} required></textarea>
             {errors.message && <span className="error">{errors.message}</span>}
           </div>
-          <button type="submit" className="btn">Send</button>
+          <button type="submit" className="submit">Send</button>
         </form>
       </div>
     </>
