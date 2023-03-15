@@ -1,4 +1,6 @@
 {
+    "homepage": "http://{kirchnerdev22}.github.io/{Reactfile}",
+
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.4",
         "@testing-library/react": "^11.1.0",
@@ -15,7 +17,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy" : "npm run build",
+        "deploy" : "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -36,6 +40,7 @@
         ]
     },
     "devDependencies": {
+        "gh-pages": "^5.0.0",
         "workbox-webpack-plugin": "^6.5.4"
     }
 }
