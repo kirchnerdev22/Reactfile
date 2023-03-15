@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/%7BReactfile%7D/static/css/main.7ef39a2d.css",
+    "main.js": "/%7BReactfile%7D/static/js/main.2d03b9c0.js",
+    "static/media/Horiseon.png": "/%7BReactfile%7D/static/media/Horiseon.1bc365883b4be17d6d3a.png",
+    "static/media/IMG_0722.JPEG": "/%7BReactfile%7D/static/media/IMG_0722.50800c9de770491e8475.JPEG",
+    "static/media/Game.png": "/%7BReactfile%7D/static/media/Game.97f1d66d7dc969b0507b.png",
+    "static/media/Profile.pdf": "/%7BReactfile%7D/static/media/Profile.fe456f5f22163ab32f31.pdf",
+    "static/media/Workday.png": "/%7BReactfile%7D/static/media/Workday.ebf92769a9758695162a.png",
+    "static/media/PasswordGen.png": "/%7BReactfile%7D/static/media/PasswordGen.3a8a9ceb2d98c39cd864.png",
+    "static/media/Notetaker.png": "/%7BReactfile%7D/static/media/Notetaker.7a65454543d770d6b103.png",
+    "static/media/Jate.png": "/%7BReactfile%7D/static/media/Jate.c5eeac641095caede162.png",
+    "index.html": "/%7BReactfile%7D/index.html",
+    "main.7ef39a2d.css.map": "/%7BReactfile%7D/static/css/main.7ef39a2d.css.map",
+    "main.2d03b9c0.js.map": "/%7BReactfile%7D/static/js/main.2d03b9c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ef39a2d.css",
+    "static/js/main.2d03b9c0.js"
+  ]
+}
