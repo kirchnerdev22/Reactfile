@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Reactfile/static/css/main.7ef39a2d.css",
+    "main.css": "/Reactfile/static/css/main.c0b4b8d5.css",
     "main.js": "/Reactfile/static/js/main.f2454c5a.js",
     "static/media/Horiseon.png": "/Reactfile/static/media/Horiseon.1bc365883b4be17d6d3a.png",
+    "static/media/Background.jpg": "/Reactfile/static/media/Background.2d1788f83f0aee18adfd.jpg",
     "static/media/IMG_0722.JPEG": "/Reactfile/static/media/IMG_0722.50800c9de770491e8475.JPEG",
     "static/media/Game.png": "/Reactfile/static/media/Game.97f1d66d7dc969b0507b.png",
     "static/media/Profile.pdf": "/Reactfile/static/media/Profile.fe456f5f22163ab32f31.pdf",
@@ -11,11 +12,11 @@
     "static/media/Notetaker.png": "/Reactfile/static/media/Notetaker.7a65454543d770d6b103.png",
     "static/media/Jate.png": "/Reactfile/static/media/Jate.c5eeac641095caede162.png",
     "index.html": "/Reactfile/index.html",
-    "main.7ef39a2d.css.map": "/Reactfile/static/css/main.7ef39a2d.css.map",
+    "main.c0b4b8d5.css.map": "/Reactfile/static/css/main.c0b4b8d5.css.map",
     "main.f2454c5a.js.map": "/Reactfile/static/js/main.f2454c5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ef39a2d.css",
+    "static/css/main.c0b4b8d5.css",
     "static/js/main.f2454c5a.js"
   ]
 }
