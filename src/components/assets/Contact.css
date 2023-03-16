@@ -1,6 +1,11 @@
 * {
   font-family: Bungee;
 }
+body {
+  background-image: url("./Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .contact-container {
   display: flex;
