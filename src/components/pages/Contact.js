@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './../assets/Contact.css';
 
 
 export default function Contact() {
@@ -45,27 +44,32 @@ export default function Contact() {
   return (
     <>
       <div className="contact-container">
-        <h1>Send me a message</h1>
-        <p>If you have any questions or would like to get in touch, please fill out the form below or email me directly at kirchnerdev22@gmail.com.
-</p>
+        <h1></h1>
+        <p></p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" value={name} onChange={handleInputChange} required />
-            {errors.name && <span className="error">{errors.name}</span>}
+            <div className="input-wrapper">
+              <div className="input-name">
+                <input type="text" id="name" name="name" value={name} onChange={handleInputChange} required placeholder="Name" />
+              </div>
+              <div className="input-email">
+                <input type="email" id="email" name="email" value={email} onChange={handleInputChange} required placeholder="Email" />
+              </div>
+            </div>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" value={email} onChange={handleInputChange} required />
-            {errors.email && <span className="error">{errors.email}</span>}
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" value={message} onChange={handleInputChange} required></textarea>
+            <textarea id="message" name="message" value={message} onChange={handleInputChange} required placeholder="Message"></textarea>
             {errors.message && <span className="error">{errors.message}</span>}
           </div>
-          <button type="submit" className="submit">Send</button>
+          <button type="submit" className="form-submit">Send</button>
         </form>
+
+        <div className="contact-details">
+          <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+          <p><strong>Phone:</strong> +1 123-456-7890</p>
+          <p><strong>Email:</strong> email@example.com</p>
+          <p><strong>Github:</strong> <a href="https://github.com/your-username">github.com/your-username</a></p>
+        </div>
       </div>
     </>
   );

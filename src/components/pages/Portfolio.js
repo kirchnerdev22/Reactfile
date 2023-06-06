@@ -1,69 +1,60 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
-import Jate from '../assets/Jate.png';
-import Workday from '../assets/Workday.png';
-import Notetaker from '../assets/Notetaker.png';
-import Game from '../assets/Game.png';
-import Password from '../assets/PasswordGen.png';
-import Horiseon from '../assets/Horiseon.png';
+import porscheImage from '../assets/porsche.jpg';
+import css3Image from '../assets/css3.png';
+import html5Image from '../assets/html5.png';
+import javascriptImage from '../assets/javascript.png';
 
-export default function Resume() {
+export default function Portfolio() {
   const projects = [
     {
-      name: 'Jate',
-      image: Jate,
-      link: 'https://lit-bayou-66279.herokuapp.com/',
-      description: <a href='https://github.com/kirchnerdev22/JATE' className='link'>The repo can be found here</a>,
+      name: 'Project 1',
+      image: porscheImage,
+      link: 'https://project1.com',
+      description: 'Description for Project 1',
     },
     {
-      name: 'Day to Day Work Planner',
-      image: Workday,
-      link: 'https://kirchnerdev22.github.io/Day-to-day-work-planner/',
-      description: <a href='https://github.com/kirchnerdev22/Day-to-day-work-planner' className='link'>The repo can be found here</a>,
+      name: 'Project 2',
+      image: css3Image,
+      link: 'https://project2.com',
+      description: 'Description for Project 2',
     },
     {
-      name: 'Note Storage',
-      image: Notetaker,
-      link: 'https://immense-waters-34827.herokuapp.com/',
-      description: <a href='https://github.com/kirchnerdev22/note-storage' className='link'>The repo can be found here</a>,
+      name: 'Project 3',
+      image: html5Image,
+      link: 'https://project3.com',
+      description: 'Description for Project 3',
     },
     {
-      name: 'Javascript Time Attack',
-      image: Game,
-      link: 'https://github.com/kirchnerdev22/Time-Attack',
-      description: <a href='https://github.com/kirchnerdev22/Time-Attack' className='link'>The repo can be found here</a>,
+      name: 'Project 4',
+      image: javascriptImage,
+      link: 'https://project4.com',
+      description: 'Description for Project 4',
     },
-    {
-      name: 'Password Generator',
-      image: Password,
-      link: 'https://kirchnerdev22.github.io/PasswordGEN/',
-      description: <a href='https://github.com/kirchnerdev22/PasswordGEN' className='link'>The repo can be found here</a>,
-    },
-    {
-      name: 'Horiseon',
-      image: Horiseon,
-      link: 'https://kirchnerdev22.github.io/horiseo-seo-challenge/#social-media-marketing',
-      description: <a href='https://github.com/kirchnerdev22/horiseo-seo-challenge' className='link'>The repo can be found here</a>,
-    },
-    
   ];
 
   return (
-    <div className='projectwhole'>
-      <p className='projectbio'>
-        These are a few of the projects I have worked on. Keep an eye out as these will change or be replaced.
-      </p>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.name} className="project">
-            <h3>{project.name}</h3>
+    <div className="portfolio-container">
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={2}
+      
+      >
+        {projects.map((project, index) => (
+          <SwiperSlide key={index} className="project-slide">
             <a href={project.link}>
-              <img src={project.image} alt={project.name} className="projectimg" />
+              <img
+                src={project.image}
+                alt={project.name}
+                className="project-image"
+              />
+              <div className="project-title">{project.name}</div>
             </a>
-            <p>{project.description}</p>
-          </li>
+          </SwiperSlide>
         ))}
-      </ul>
+      </Swiper>
     </div>
   );
 }

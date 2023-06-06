@@ -1,17 +1,22 @@
 import React from 'react';
-import Trent from "../assets/IMG_0722.JPEG"
+
+import ProfilePhoto from '../assets/image.JPEG';
 
 export default function About() {
   return (
-    <div>
-      <div className='about'>
-        <p className='bio'>
-          I am a full-stack developer proficient in MYSQL, Node, Javascript, React, etc. I transplanted to Nashville from Indiana. Id love to help with whatever you are working on. 
-          <br/>
-          <img className="head" src={Trent} alt='Trent' />
-          <br/> 
+    <div className='about'>
+      <div className='profile-section'>
+        <img src={ProfilePhoto} alt='Profile' className='profile-photo' />
+      </div>
+      <div className='info-section'>
+        <div className='names-container'>
+          <span className='name'>Trenton</span>
+          <span className='name yellow'>Kirchner</span>
+        </div>
+        <p>
+          My name is Trenton Kirchner. I am a front-end developer, and I'm very passionate and dedicated to my work. I'm new to the field, but I come packing passion and drive to be the best developer I can be.
         </p>
-        <p className='quote'>Code is like a national park. Leave it better than you found it.<br/><br/>-Trenton Kirchner</p>
+        <a href='/learn-more' className='learn-more-btn'>Learn More</a>
       </div>
     </div>
   );
