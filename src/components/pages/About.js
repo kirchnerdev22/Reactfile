@@ -1,22 +1,21 @@
 import React from 'react';
-
-import ProfilePhoto from '../assets/image.JPEG';
+import AboutPhoto from '../assets/standing.png';
 
 export default function About() {
   return (
     <div className='about'>
-      <div className='profile-section'>
-        <img src={ProfilePhoto} alt='Profile' className='profile-photo' />
-      </div>
-      <div className='info-section'>
-        <div className='names-container'>
-          <span className='name'>Trenton</span>
-          <span className='name yellow'>Kirchner</span>
-        </div>
+      
+      <div className='content-section'>
+        <h2>About Me</h2>
         <p>
-          My name is Trenton Kirchner. I am a front-end developer, and I'm very passionate and dedicated to my work. I'm new to the field, but I come packing passion and drive to be the best developer I can be.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis et justo fringilla, nec consectetur sem posuere. Fusce sollicitudin, mi vitae euismod iaculis, purus elit pulvinar metus, id rhoncus turpis velit at ligula.
         </p>
-        <a href='/learn-more' className='learn-more-btn'>Learn More</a>
+        <p>
+          Nulla facilisi. Praesent ac enim dictum, tincidunt quam nec, maximus neque. Donec vitae diam metus. Nullam scelerisque enim eros, sit amet finibus massa pellentesque et. Mauris a justo ac leo efficitur volutpat id sit amet sapien.
+        </p>
+      </div>
+      <div className='photo-section'>
+        <img src={AboutPhoto} alt='Profile' className='about-photo' />
       </div>
     </div>
   );

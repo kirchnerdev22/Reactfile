@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -42,9 +41,8 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div className="contact-page"> {/* Add the contact-page class to the parent container */}
       <div className="contact-container">
-        <h1></h1>
         <p></p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -71,6 +69,6 @@ export default function Contact() {
           <p><strong>Github:</strong> <a href="https://github.com/your-username">github.com/your-username</a></p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

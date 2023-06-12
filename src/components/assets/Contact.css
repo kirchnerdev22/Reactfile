@@ -2,7 +2,10 @@
 * {
   font-family: monospace;
 }
-
+body {
+  background: linear-gradient(to bottom, black 85%, grey) no-repeat;
+  background-size: 100% 100%;
+}
 
 .header-container {
   position: sticky;
@@ -103,11 +106,14 @@
 
 .name {
   font-size: 50px;
-  margin: 0 5px;
+  
 }
 
-.yellow {
-  font-size: 50px;
+.rotate-text {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-right: 100%;
 }
 
 .center-container {
@@ -122,16 +128,22 @@
 }
 
 .profile-photo {
-  height: 300px;
+  width:700px;
   /* adjust the height of the profile photo */
-  margin-right: 100px;
+  margin-right: 10px;
+  margin-top: 30px;
   /* adjust the margin as needed */
   border-radius: 10px;
 }
 
+.about-photo{
+  width: 110%;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
 .info-section {
   margin-top: -75px;
-  text-align: center;
   position: relative;
   /* Add relative positioning to create a new positioning context */
 }
@@ -187,18 +199,30 @@ p {
   object-fit: cover;
 }
 
-.portfolio-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.portfolio-page {
+  width: 60vw;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  width: 60%;
+  align-items: center;
+  flex-direction: column; /* Center items vertically */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.portfolio-title {
+  margin-bottom: 45px; /* Add margin at the bottom */
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Use full width */
+  margin: 0 auto; /* Center horizontally */
 }
 
 .project-image {
-  display: block;
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -209,6 +233,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 10px;
@@ -216,12 +241,24 @@ p {
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease;
-  margin-left: -250px;
-  margin-top: 75px;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project-slide {
+  position: relative;
 }
 
 .project-slide:hover .project-title {
-  opacity: 5;
+  opacity: 1;
+}
+
+.contact-page {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-container {
@@ -302,14 +339,15 @@ p {
 
 .form-submit {
   text-decoration: none;
-  color: #fff;
+  color: #222;
   display: inline-block;
-  background-color: #eb4a4c;
+  background-color: #ffee00;
+  font-family: Pacifico;
   text-align: center;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   font-family: "Poppins";
-  transition: all .3s ease;
+  font-size: 25px;
   width: 100px;
 }
 

@@ -15,10 +15,40 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <div className="header-background">
       <header className="header-container">
-        <h1 onClick={() => handlePageChange('About')} style={{ cursor: 'pointer' }}>
+        <h1
+          onClick={() => {
+            handlePageChange('Home');
+            setActiveButton('home');
+          }}
+          style={{ cursor: 'pointer' }}
+        >
           TK
         </h1>
         <ul className="nav nav-tabs">
+          <li className="nav-item">
+            <a
+              href="#home"
+              onClick={() => {
+                handlePageChange('Home');
+                setActiveButton('home');
+              }}
+              className={currentPage === 'Home' ? 'nav-link active' : `nav-link ${activeButton === 'home' ? 'active-white' : ''}`}
+            >
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#about"
+              onClick={() => {
+                handlePageChange('About');
+                setActiveButton('about');
+              }}
+              className={currentPage === 'About' ? 'nav-link active' : `nav-link ${activeButton === 'about' ? 'active-white' : ''}`}
+            >
+              About
+            </a>
+          </li>
           <li className="nav-item">
             <a
               href="#portfolio"
@@ -29,18 +59,6 @@ function Header({ currentPage, handlePageChange }) {
               className={currentPage === 'Portfolio' ? 'nav-link active' : `nav-link ${activeButton === 'portfolio' ? 'active-white' : ''}`}
             >
               Portfolio
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              href="#resume"
-              onClick={() => {
-                handlePageChange('Resume');
-                setActiveButton('resume');
-              }}
-              className={currentPage === 'Resume' ? 'nav-link active' : `nav-link ${activeButton === 'resume' ? 'active-white' : ''}`}
-            >
-              Resume
             </a>
           </li>
           <li className="nav-item">
