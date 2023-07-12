@@ -2,15 +2,6 @@ import React, { useState } from 'react';
 
 function Header({ currentPage, handlePageChange }) {
   const [activeButton, setActiveButton] = useState('');
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-
-  const showDropdown = () => {
-    setDropdownVisible(true);
-  };
-
-  const hideDropdown = () => {
-    setDropdownVisible(false);
-  };
 
   return (
     <div className="header-background">
@@ -33,6 +24,7 @@ function Header({ currentPage, handlePageChange }) {
                 setActiveButton('home');
               }}
               className={currentPage === 'Home' ? 'nav-link active' : `nav-link ${activeButton === 'home' ? 'active-white' : ''}`}
+              style={{ color: '#ff0000' }}
             >
               Home
             </a>
@@ -45,20 +37,22 @@ function Header({ currentPage, handlePageChange }) {
                 setActiveButton('about');
               }}
               className={currentPage === 'About' ? 'nav-link active' : `nav-link ${activeButton === 'about' ? 'active-white' : ''}`}
+              style={{ color: 'rgba(64, 185, 157, 0.8)' }}
             >
               About
             </a>
           </li>
           <li className="nav-item">
             <a
-              href="#portfolio"
+              href="#projects"
               onClick={() => {
-                handlePageChange('Portfolio');
-                setActiveButton('portfolio');
+                handlePageChange('Projects');
+                setActiveButton('projects');
               }}
-              className={currentPage === 'Portfolio' ? 'nav-link active' : `nav-link ${activeButton === 'portfolio' ? 'active-white' : ''}`}
+              className={currentPage === 'Projects' ? 'nav-link active' : `nav-link ${activeButton === 'projects' ? 'active-white' : ''}`}
+              style={{ color: '#d4a72b' }}
             >
-              Portfolio
+              Projects
             </a>
           </li>
           <li className="nav-item">
@@ -69,23 +63,12 @@ function Header({ currentPage, handlePageChange }) {
                 setActiveButton('contact');
               }}
               className={currentPage === 'Contact' ? 'nav-link active' : `nav-link ${activeButton === 'contact' ? 'active-white' : ''}`}
+              style={{ color: 'rgba(178, 164, 212)'  }}
             >
               Contact
             </a>
           </li>
         </ul>
-        <h2 className="nav-item dropdown" onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-          <a href="#social" className="nav-link">
-            @social
-          </a>
-          {dropdownVisible && (
-            <div className="dropdown-content">
-              <a href="#facebook">Facebook</a>
-              <a href="#twitter">Twitter</a>
-              <a href="#instagram">Instagram</a>
-            </div>
-          )}
-        </h2>
       </header>
     </div>
   );

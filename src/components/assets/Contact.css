@@ -1,10 +1,23 @@
-
 * {
   font-family: monospace;
+  background-color: #000000;
 }
-body {
-  background: linear-gradient(to bottom, black 85%, grey) no-repeat;
-  background-size: 100% 100%;
+
+.social-links {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height: 80px;
+}
+
+.github-img {
+  margin-top: 20px;
+  width: 50px;
+}
+
+.linkedin{
+  width: 100px;
 }
 
 .header-container {
@@ -13,7 +26,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: transparent;
   color: white;
   font-family: monospace;
   padding: 10px;
@@ -25,13 +38,14 @@ body {
 }
 
 .header-background {
-  background: black;
+  background: transparent;
   width: 100%;
 }
 
 .header-container h1 {
   margin: 0;
   margin-right: 10px;
+  background: none;
 }
 
 .nav.nav-tabs {
@@ -43,6 +57,7 @@ body {
   flex-grow: 1;
   width: 100%;
   border: none;
+  background-color: transparent;
 }
 
 .nav.nav-tabs .nav-item {
@@ -63,34 +78,8 @@ body {
   font-weight: bold;
 }
 
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  flex-direction: column;
-  background-color: #000000;
-  min-width: 160px;
-  padding: 8px;
-  z-index: 1;
-}
-
-.nav-item.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 4px 0;
-  text-decoration: none;
-  background: #000000;
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #000000;
-  color: white;
+.nav-item{
+  background: none;
 }
 
 .about {
@@ -101,20 +90,19 @@ body {
   /* Set the width to 60% */
   margin: 0 auto;
   /* Center horizontally */
-  height: 100vh;
+
 }
 
 .name {
-  font-size: 50px;
-  
+  font-size: 36px;
+  color: red;
+
 }
 
-.rotate-text {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  margin-right: 100%;
+.bold-name {
+  color: red;
 }
+
 
 .center-container {
   display: flex;
@@ -128,39 +116,42 @@ body {
 }
 
 .profile-photo {
-  width:700px;
-  /* adjust the height of the profile photo */
-  margin-right: 10px;
+  width: 700px;
+  margin-right: 100px;
   margin-top: 30px;
-  /* adjust the margin as needed */
   border-radius: 10px;
 }
 
-.about-photo{
-  width: 110%;
-  margin-left: -30px;
-  margin-top: 20px;
+.about-photo {
+  width: 200%;
+  margin-bottom: 0%;
+  
 }
 
 .info-section {
   margin-top: -75px;
+  text-align: left;
   position: relative;
+  color: #ccc;
+  width: 20vw;
   /* Add relative positioning to create a new positioning context */
+}
+
+.info-section p {
+  font-size: 18px;
 }
 
 h2 {
   text-align: center;
 }
 
-p {
-  text-align: justify;
-}
+
 
 .learn-more-btn {
-  /* Existing styles */
   display: inline-block;
   width: 150px;
   margin-top: 20px;
+  border: none;
   text-align: center;
   background-color: red;
   border-radius: 25px;
@@ -168,11 +159,6 @@ p {
   height: 50px;
   color: white;
   text-decoration: none;
-  line-height: 50px;
-  transition: transform 0.3s;
-  /* Add new styles */
-  position: absolute;
-  left: 0;
 }
 
 .learn-more-btn:hover {
@@ -193,174 +179,219 @@ p {
   }
 }
 
-.project-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+
+.content-section {
+  text-align: left;
+  color: #ccc;
 }
 
-.portfolio-page {
-  width: 60vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column; /* Center items vertically */
-  margin: 0 auto; /* Center horizontally */
+.content-section p {
+  font-size: 18px;
 }
 
-.portfolio-title {
-  margin-bottom: 45px; /* Add margin at the bottom */
-  text-align: center;
+.content-section h2 {
   font-size: 36px;
-  color: white;
+  text-align: left;
+  color: rgba(64, 185, 157, 0.8);
+
 }
 
-.portfolio-container {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Use full width */
-  margin: 0 auto; /* Center horizontally */
+.music-section {
+  padding-top: 5%;
 }
 
-.project-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 5px;
+.music-section p {
+  font-size: 18px;
+  color: rgba(64, 185, 157, 0.8);
 }
 
-.project-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  width: 80%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.project-slide {
-  position: relative;
-}
-
-.project-slide:hover .project-title {
-  opacity: 1;
+.about-info {
+  height: 40vh;
 }
 
 .contact-page {
-  height: 100vh; /* Set the height to 100% of the viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-
-.contact-details {
-  flex: 1;
-  margin-left: 70px;
-}
-
-.contact-details p {
   width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  position: relative;
-  background-color: #222;
-  border-radius: 10px;
-  padding: 10px;
-  color: #ccc;
+  height: 55vh;
+  margin-bottom: 10%;
+}
+
+.flavor-text {
+  text-align: center;
+  color: rgba(178, 164, 212);
+  font-size: 36px;
+  margin-right: 12%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: center;
 }
 
-.input-name input {
-  width: 100%;
-  height: 45px;
-  background-color: #222;
-  border: none;
-  color: #ccc;
-  padding: 28px;
-  font-family: "Poppins";
-  border-radius: 10px;
+.form-group {
+  margin-bottom: -10px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
-.input-email input {
+.form-group .input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 5vh;
   width: 100%;
-  height: 45px;
-  background-color: #222;
-  border: none;
-  color: #ccc;
-  padding: 28px;
-  font-family: "Poppins";
-  border-radius: 10px;
 }
+
+.form-group .input-name,
+.form-group .input-email {
+  width: calc(50%);
+  margin: 5px;
+}
+
+.form-group .input-name input,
+.form-group .input-email input {
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  border: none;
+  background-color: #fff;
+  color: #222;
+  font-size: 18px;
+
+}
+
+.form-group .input-name input::placeholder,
+.form-group .input-email input::placeholder,
+.form-group textarea::placeholder {
+  padding-left: 5px;
+}
+
+
+.form-group textarea {
+  width: 99vw;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: #222;
+  font-size: 18px;
+}
+
 
 .input-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-group textarea {
-  width: 100%;
-  height: 125px;
-  background-color: #222;
-  border: none;
-  color: #ccc;
-  resize: none;
-  padding: 20px;
-  margin-top: 10px;
-  border-radius: 10px;
-  font-family: "Poppins";
+.input-name,
+.input-email {
+  margin-right: 10px;
 }
 
-.form-group textarea {
-  resize: vertical;
+.error {
+  color: red;
 }
 
 .form-submit {
-  text-decoration: none;
-  color: #222;
   display: inline-block;
-  background-color: #ffee00;
-  font-family: Pacifico;
+  width: 150px;
+  margin-top: 20px;
+  border: none;
   text-align: center;
-  height: 40px;
-  border-radius: 10px;
-  font-family: "Poppins";
-  font-size: 25px;
-  width: 100px;
+  background-color: rgba(178, 164, 212);
+  border-radius: 25px;
+  font-size: 22px;
+  height: 50px;
+  color: white;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  /* Ensure the grid takes up the full height */
 
-  .contact-details,
-  .contact-form {
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 20px;
+}
+
+.linkedin {
+  color: rgba(64, 185, 157, 0.8);
+}
+
+.projects-page {
+  width: 60%;
+  margin: auto;
+}
+
+.projects-title {
+  color: #d4a72b;
+  font-size: 36px;
+  padding-top: 3%;
+}
+
+.projects-item {
+  margin-top: 3%;
+}
+
+.projects-item p {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.projects-item h3 a {
+  text-decoration: none;
+  color: #d4a72b;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.success-modal {
+  text-align: center;
+  font-size: 48px;
+  color: #ccc;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.success-message {
+  background-color: rgba(178, 164, 212);
+  padding: 10px;
+  border-radius: 20px;
+  animation: fade-out 0.5s ease-in-out 2s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
