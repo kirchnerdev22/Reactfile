@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/Reactfile/static/css/main.c0b4b8d5.css",
-    "main.js": "/Reactfile/static/js/main.f2454c5a.js",
-    "static/media/Horiseon.png": "/Reactfile/static/media/Horiseon.1bc365883b4be17d6d3a.png",
-    "static/media/Background.jpg": "/Reactfile/static/media/Background.2d1788f83f0aee18adfd.jpg",
-    "static/media/IMG_0722.JPEG": "/Reactfile/static/media/IMG_0722.50800c9de770491e8475.JPEG",
-    "static/media/Game.png": "/Reactfile/static/media/Game.97f1d66d7dc969b0507b.png",
-    "static/media/Profile.pdf": "/Reactfile/static/media/Profile.fe456f5f22163ab32f31.pdf",
-    "static/media/Workday.png": "/Reactfile/static/media/Workday.ebf92769a9758695162a.png",
-    "static/media/PasswordGen.png": "/Reactfile/static/media/PasswordGen.3a8a9ceb2d98c39cd864.png",
-    "static/media/Notetaker.png": "/Reactfile/static/media/Notetaker.7a65454543d770d6b103.png",
-    "static/media/Jate.png": "/Reactfile/static/media/Jate.c5eeac641095caede162.png",
+    "main.css": "/Reactfile/static/css/main.cfc634ca.css",
+    "main.js": "/Reactfile/static/js/main.7c8d3b8e.js",
+    "static/media/image.png": "/Reactfile/static/media/image.fb01b4a81783cba3b3cf.png",
+    "static/media/standing.png": "/Reactfile/static/media/standing.489df28cc52c9e461821.png",
     "index.html": "/Reactfile/index.html",
-    "main.c0b4b8d5.css.map": "/Reactfile/static/css/main.c0b4b8d5.css.map",
-    "main.f2454c5a.js.map": "/Reactfile/static/js/main.f2454c5a.js.map"
+    "main.cfc634ca.css.map": "/Reactfile/static/css/main.cfc634ca.css.map",
+    "main.7c8d3b8e.js.map": "/Reactfile/static/js/main.7c8d3b8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0b4b8d5.css",
-    "static/js/main.f2454c5a.js"
+    "static/css/main.cfc634ca.css",
+    "static/js/main.7c8d3b8e.js"
   ]
 }
